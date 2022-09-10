@@ -1,4 +1,4 @@
-import { Button, Container, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Container, HStack, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
@@ -22,6 +22,7 @@ const Home = ({ quotes }: Props) => {
         maxW="container.md"
         alignContent="center"
         justifyContent="center"
+        as="main"
       >
         <Text
           mt={4}
@@ -42,6 +43,16 @@ const Home = ({ quotes }: Props) => {
           </Button>
         </HStack>
       </Container>
+      <Center as="footer" mt={5} flexDirection="column">
+        <a
+          href="https://twitter.com/H4rasho"
+          target="_black"
+          rel="noreferrer noopener "
+        >
+          <Text textColor="gray">Made by {"H4rasho"}</Text>
+        </a>
+        <Text textColor="gray">All Rights Belong to Monogatari Series</Text>
+      </Center>
     </div>
   );
 };
