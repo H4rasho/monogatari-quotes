@@ -1,6 +1,5 @@
 [
     {
-      "id": "1",
       "character": "Koyomi Araragi",
       "episode": "Perdida Sodachi",
       "season": "Owarimonogatari",
@@ -8,7 +7,6 @@
         "En este mundo no existe ninguna felicidad tan pesada como para aplastarte. La felicidad no es brillante ni pesada. La sobrevaloras."
     },
     {
-      "id": "2",
       "character": "Yozuru Kagenui",
       "season": "Nisemonogatari",
       "episode": "Fenix Tsukihi Parte Cuatro",
@@ -16,18 +14,15 @@
         "Dado un Real y un impostor indistingibles, que vale más. Naturalmente mi respuesta fue que el real tenia mas valor. Sin Embargo, Oshino-kun afirmó que tenían igual valor. Pero el arugmento de Kaiki era que el impostor es de un valor mucho mayor. En su delirado intento por se real, es mas real que el propio real."
     },
      {
-      "id": "4",
       "character": "Hitagi Senjougahara",
       "season": "Bakemonogatari",
       "episode": "Gato Tsubasa, Segunda Parte",
       "quote": "Esto es todo. Lo que poseo, mi todo. La oportunidad de enseñarte, una adorable amiga menor, un padre un poco patoso y este cielo estrellado. Esto es  todo lo que poseo, son las únicas cosas que puedo darte, Araragi. Es mi Todo."
         
     }, {
-      "id": "5",
       "character" : "Oshino Meme",
       "season" : "Kizumonogatari",
       "episode" : "Kizumonogatari Parte 3",
       "quote": "Sin embargo, hay una manera para que todos esten insatisfechos. En otras palabras, puede haber un método, para dividir la infelicidad en multiples partes."
-
     }
 ] 

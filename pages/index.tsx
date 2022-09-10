@@ -49,9 +49,13 @@ const Home = ({ quotes }: Props) => {
           target="_black"
           rel="noreferrer noopener "
         >
-          <Text textColor="gray">Made by {"H4rasho"}</Text>
+          <Text textColor="gray" as="p" fontSize="smaller">
+            Made by {"H4rasho"}
+          </Text>
         </a>
-        <Text textColor="gray">All Rights Belong to Monogatari Series</Text>
+        <Text textColor="gray" as="p">
+          All Rights Belong to Monogatari Series
+        </Text>
       </Center>
     </div>
   );
