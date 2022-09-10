@@ -3,7 +3,7 @@ import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
-import { readFile } from "fs/promises";
+import { API_URL } from "../config";
 
 interface Props {
   quotes: Quote[];
@@ -53,8 +53,8 @@ const Home = ({ quotes }: Props) => {
             Made by {"H4rasho"}
           </Text>
         </a>
-        <Text textColor="gray" as="p">
-          All Rights Belong to Monogatari Series
+        <Text textColor="gray" as="p" fontSize="smaller">
+          All Quotes Belong to Monogatari Series
         </Text>
       </Center>
     </div>
@@ -64,8 +64,8 @@ const Home = ({ quotes }: Props) => {
 export default Home;
 
 export async function getStaticProps() {
-  const data = await readFile("./quotes/data.json", "utf-8");
-  const quotes = JSON.parse(data);
+  const data = await fetch(`${API_URL}/api/quotes?limit=4`);
+  const quotes = await data.json();
 
   return {
     props: {
