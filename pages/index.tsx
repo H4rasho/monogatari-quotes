@@ -5,6 +5,7 @@ import { Quote } from "../core/quotes/types";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { API_URL } from "../config";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 interface Props {
   quotes: Quote[];
@@ -15,7 +16,7 @@ const Home = ({ quotes }: Props) => {
     <div>
       <Head>
         <title>Monogatari Quotes</title>
-        <meta name="description" content="List of monogatari quotes" />
+        <meta name="description" content="List of Monogatari Series quotes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -25,6 +26,8 @@ const Home = ({ quotes }: Props) => {
         justifyContent="center"
         as="main"
       >
+        <Header />
+
         <Text
           mt={4}
           fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
@@ -43,8 +46,9 @@ const Home = ({ quotes }: Props) => {
             Next
           </Button>
         </HStack>
+
+        <Footer />
       </Container>
-      <Footer />
     </div>
   );
 };
