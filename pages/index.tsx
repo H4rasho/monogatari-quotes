@@ -1,8 +1,9 @@
-import { Button, Container, Text } from "@chakra-ui/react";
+import { Button, Container, HStack, Text } from "@chakra-ui/react";
 import Head from "next/head";
-import { API_URL } from "../config";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import { readFile } from "fs/promises";
 
 interface Props {
   quotes: Quote[];
@@ -31,8 +32,14 @@ const Home = ({ quotes }: Props) => {
           Monogatari Quotes
         </Text>
         <QuotesList quotes={quotes}></QuotesList>
-        <Button>Prev</Button>
-        <Button>Next</Button>
+        <HStack justify="right" mt={5}>
+          <Button leftIcon={<ArrowBackIcon />} bg="black" color="white">
+            Prev
+          </Button>
+          <Button rightIcon={<ArrowForwardIcon />} bg="black" color="white">
+            Next
+          </Button>
+        </HStack>
       </Container>
     </div>
   );
@@ -41,11 +48,12 @@ const Home = ({ quotes }: Props) => {
 export default Home;
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/quotes`);
-  const data = await res.json();
+  const data = await readFile("./quotes/data.json", "utf-8");
+  const quotes = JSON.parse(data);
+
   return {
     props: {
-      quotes: data,
+      quotes,
     },
   };
 }

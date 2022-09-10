@@ -1,11 +1,14 @@
 import {
-  Avatar,
+  Box,
   Divider,
+  Grid,
   HStack,
+  Image,
   List,
   ListItem,
   Text,
 } from "@chakra-ui/react";
+
 import { Quote } from "./types";
 
 interface QuoteListProps {
@@ -16,21 +19,23 @@ export default function QuotesList({ quotes }: QuoteListProps) {
   return (
     <List mt={10}>
       {quotes.map((quote) => (
-        <ListItem key={quote.id}>
+        <ListItem key={quote.quote}>
           <Text fontSize="xl" as="h2" fontWeight="bold">
-            {quote.author.name}
+            {quote.character}
           </Text>
           <HStack>
             <Text as="h3" fontWeight="semibold" textColor="GrayText">
-              {quote.episode.name} - EP {quote.episode.number} -{" "}
-              {quote.episode.season.name}
+              {quote.episode} - {quote.season}
             </Text>
           </HStack>
-          <HStack mt={3} gap={5}>
-            <Avatar
-              src={quote.author.avatar}
-              w={[20, 100, 130]}
-              h={[20, 100, 130]}
+          <Grid mt={3} gap={5} templateColumns="auto auto">
+            <Image
+              src={`/images/${quote.character}.jpg`}
+              w={[100, 150]}
+              h={[100, 150]}
+              rounded="full"
+              alt={quote.character}
+              objectFit="cover"
             />
             <Text
               fontSize={{ md: "xl" }}
@@ -40,7 +45,7 @@ export default function QuotesList({ quotes }: QuoteListProps) {
             >
               {quote.quote}
             </Text>
-          </HStack>
+          </Grid>
           <Divider mt={5} />
         </ListItem>
       ))}
