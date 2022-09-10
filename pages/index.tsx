@@ -28,6 +28,7 @@ const Home = ({ quotes }: Props) => {
           fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
           as="h1"
           fontWeight="bold"
+          textAlign="center"
         >
           Monogatari Quotes
         </Text>
