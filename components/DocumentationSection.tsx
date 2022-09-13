@@ -1,4 +1,3 @@
-import { Heading } from "@chakra-ui/react";
 import H2 from "./icons/headings/H2";
 
 export default function DocumentationSection({
