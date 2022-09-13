@@ -1,11 +1,8 @@
 import Head from "next/head";
 import {
   Box,
-  Button,
   Code,
-  Heading,
   HStack,
-  Icon,
   Table,
   TableContainer,
   Tbody,
@@ -17,10 +14,15 @@ import {
 } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 import { API_URL } from "../config";
-import DocumentationItem from "../components/DocumentationItem";
 import Github from "../components/icons/Github";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
+import DocumentationItem from "../components/DocumentationItem";
+import DocumentationSection from "../components/DocumentationSection";
+
+/**
+  CONSTANTS
+*/
 const API_BASE_URL = `${API_URL}/api/quotes`;
 const API_URL_WITH_PAGINATION = `${API_BASE_URL}/?limit=4&offset=3`;
 const API_URL_RANDOM = `${API_BASE_URL}/random`;
@@ -67,73 +69,75 @@ export default function Documentacion() {
         >
           Monogatari Quotes API
         </Text>
-        <Heading as="h2" fontSize="2xl" mt={5} textColor="purple.500">
-          ¿Cómo usar?
-        </Heading>
 
-        <Text mt={4} fontSize="xl" fontWeight="medium">
-          Obtener una lista de frases
-        </Text>
+        <DocumentationSection title="Contribuir">
+          <HStack>
+            <Text>
+              Si quieres agregar una frase o corregir una frase, puedes hacerlo
+              en el repositorio de GitHub.
+            </Text>
+            <ArrowForwardIcon color="purple.500" w={6} h={6} />
+            <a
+              href="https://github.com/H4rasho"
+              target="_black"
+              rel="noreferrer noopener"
+            >
+              <Github />
+            </a>
+          </HStack>
+        </DocumentationSection>
 
-        <DocumentationItem
-          description={<QuotesListDescription />}
-          endpoint={API_BASE_URL}
-        />
-
-        <DocumentationItem
-          description={<PaginationDescription />}
-          endpoint={API_URL_WITH_PAGINATION}
-        />
-        <Text mt={4} fontSize="xl" fontWeight="medium">
-          Otener una frase aleatoria
-        </Text>
-        <DocumentationItem
-          description={<RandomQuoteDescription />}
-          endpoint={API_URL_RANDOM}
-        ></DocumentationItem>
-
-        <Heading as="h2" fontSize="2xl" mt={5} textColor="purple.500">
-          Respuesta:
-        </Heading>
-
-        <TableContainer>
-          <Table variant="simple">
-            <Thead>
-              <Th>Campo</Th>
-              <Th>Tipo</Th>
-            </Thead>
-            <Tbody>
-              {QUOTES_API_RESPONSE.map((item) => (
-                <Tr key={item.campo}>
-                  <Td>
-                    <Code>{item.campo}</Code>
-                  </Td>
-                  <Td>
-                    <Code>{item.tipo}</Code>
-                  </Td>
-                </Tr>
-              ))}
-            </Tbody>
-          </Table>
-        </TableContainer>
-
-        <Heading as="h2" fontSize="2xl" mt={5} textColor="purple.500">
-          Contribuir
-        </Heading>
-        <HStack>
-          <Text>
-            Si quieres agregar una frase o corregir una frase, puedes hacerlo en
-            el repositorio de GitHub.
+        <DocumentationSection title="¿Cómo usar?">
+          <Text mt={4} fontSize="xl" fontWeight="medium">
+            Obtener una lista de frases
           </Text>
-          <ArrowForwardIcon color="purple.500" w={6} h={6} />
-          <a
-            href="https://github.com/H4rasho"
-            target="_black"
-            rel="noreferrer noopener"
-          >
-            <Github />
-          </a>
-        </HStack>
+
+          <Box px={5}>
+            <DocumentationItem
+              description={<QuotesListDescription />}
+              endpoint={API_BASE_URL}
+            />
+
+            <DocumentationItem
+              description={<PaginationDescription />}
+              endpoint={API_URL_WITH_PAGINATION}
+            />
+          </Box>
+
+          <Text mt={4} fontSize="xl" fontWeight="medium">
+            Otener una frase aleatoria
+          </Text>
+
+          <Box px={5}>
+            <DocumentationItem
+              description={<RandomQuoteDescription />}
+              endpoint={API_URL_RANDOM}
+            ></DocumentationItem>
+          </Box>
+        </DocumentationSection>
+
+        <DocumentationSection title="Respuesta">
+          <TableContainer px={5} mt={5}>
+            <Table variant="simple">
+              <Thead>
+                <Th>Campo</Th>
+                <Th>Tipo</Th>
+              </Thead>
+              <Tbody>
+                {QUOTES_API_RESPONSE.map((item) => (
+                  <Tr key={item.campo}>
+                    <Td>
+                      <Code>{item.campo}</Code>
+                    </Td>
+                    <Td>
+                      <Code>{item.tipo}</Code>
+                    </Td>
+                  </Tr>
+                ))}
+              </Tbody>
+            </Table>
+          </TableContainer>
+        </DocumentationSection>
       </Layout>
     </>
   );
