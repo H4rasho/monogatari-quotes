@@ -6,7 +6,7 @@ import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { API_URL } from "../config";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import H1 from "../components/icons/headings/H1";
+import H1 from "../components/headings/H1";
 
 interface Props {
   quotes: Quote[];

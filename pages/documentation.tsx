@@ -17,7 +17,7 @@ import { API_URL } from "../config";
 import Github from "../components/icons/Github";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
-import H1 from "../components/icons/headings/H1";
+import H1 from "../components/headings/H1";
 import DocumentationItem from "../components/DocumentationItem";
 import DocumentationSection from "../components/DocumentationSection";
 

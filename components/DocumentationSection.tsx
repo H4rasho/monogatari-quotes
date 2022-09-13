@@ -1,4 +1,4 @@
-import H2 from "./icons/headings/H2";
+import H2 from "./headings/H2";
 
 export default function DocumentationSection({
   title,
