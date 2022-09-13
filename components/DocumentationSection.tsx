@@ -1,4 +1,5 @@
 import { Heading } from "@chakra-ui/react";
+import H2 from "./icons/headings/H2";
 
 export default function DocumentationSection({
   title,
@@ -9,9 +10,7 @@ export default function DocumentationSection({
 }) {
   return (
     <>
-      <Heading as="h2" fontSize="2xl" mt={5} textColor="purple.500">
-        {title}{" "}
-      </Heading>
+      <H2>{title}</H2>
       {children}
     </>
   );

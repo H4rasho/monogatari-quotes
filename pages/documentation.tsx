@@ -17,6 +17,7 @@ import { API_URL } from "../config";
 import Github from "../components/icons/Github";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
+import H1 from "../components/icons/headings/H1";
 import DocumentationItem from "../components/DocumentationItem";
 import DocumentationSection from "../components/DocumentationSection";
 
@@ -59,16 +60,7 @@ export default function Documentacion() {
       </Head>
 
       <Layout>
-        <Text
-          mt={4}
-          fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
-          as="h1"
-          fontWeight="bold"
-          textAlign="center"
-          textColor={"purple.500"}
-        >
-          Monogatari Quotes API
-        </Text>
+        <H1>Monogatari Quotes API</H1>
 
         <DocumentationSection title="Contribuir">
           <HStack>
