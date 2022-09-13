@@ -32,11 +32,15 @@ const Home = ({ quotes }: Props) => {
         <H1>Monogatari Quotes</H1>
         <QuotesList quotes={quotes}></QuotesList>
         <HStack justify="right" mt={5}>
-          <Button leftIcon={<ArrowBackIcon />} bg="black" color="white">
-            Prev
+          <Button leftIcon={<ArrowBackIcon />} bg="purple.500" color="white">
+            Anterior
           </Button>
-          <Button rightIcon={<ArrowForwardIcon />} bg="black" color="white">
-            Next
+          <Button
+            rightIcon={<ArrowForwardIcon />}
+            bg="purple.500"
+            color="white"
+          >
+            Siguiente
           </Button>
         </HStack>
 
