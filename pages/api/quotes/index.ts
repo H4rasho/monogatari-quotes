@@ -15,6 +15,6 @@ export default async function handler(
   const quotes = JSON.parse(data);
 
   const result = quotes.slice(offset, limit);
-
+  
   res.status(200).json(result);
 }

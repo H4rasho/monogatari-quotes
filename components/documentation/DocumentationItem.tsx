@@ -1,10 +1,10 @@
-import { Badge, Code, Flex, Text } from "@chakra-ui/react";
+import { Badge, Code, Flex } from "@chakra-ui/react";
 
 export default function DocumentationItem({
   description,
   endpoint,
 }: {
-  description: React.ReactNode;
+    description: React.ReactNode;
   endpoint: string;
 }) {
   return (

@@ -70,7 +70,7 @@ export default function Documentacion() {
             </Text>
             <ArrowForwardIcon color="purple.500" w={6} h={6} />
             <a
-              href="https://github.com/H4rasho"
+              href="https://github.com/H4rasho/monogatari-quotes"
               target="_black"
               rel="noreferrer noopener"
             >
