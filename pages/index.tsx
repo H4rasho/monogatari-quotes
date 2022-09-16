@@ -1,4 +1,4 @@
-import { Button, Container, HStack, Text } from "@chakra-ui/react";
+import { Button, Container, HStack } from "@chakra-ui/react";
 import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
