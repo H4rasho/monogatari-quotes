@@ -1,12 +1,9 @@
-import { Button, Container, HStack } from "@chakra-ui/react";
 import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
-import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { API_URL } from "../config";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import H1 from "../components/headings/H1";
+import Layout from "../components/Layout";
 
 interface Props {
   quotes: Quote[];
@@ -21,31 +18,10 @@ const Home = ({ quotes }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container
-        maxW="container.md"
-        alignContent="center"
-        justifyContent="center"
-        as="main"
-      >
-        <Header />
-
-        <H1>Monogatari Quotes</H1>
+      <Layout>
+        <H1 mt={10}>Monogatari Quotes</H1>
         <QuotesList quotes={quotes}></QuotesList>
-        <HStack justify="right" mt={5}>
-          <Button leftIcon={<ArrowBackIcon />} bg="purple.500" color="white">
-            Anterior
-          </Button>
-          <Button
-            rightIcon={<ArrowForwardIcon />}
-            bg="purple.500"
-            color="white"
-          >
-            Siguiente
-          </Button>
-        </HStack>
-
-        <Footer />
-      </Container>
+      </Layout>
     </div>
   );
 };

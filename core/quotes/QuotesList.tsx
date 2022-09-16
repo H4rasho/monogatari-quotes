@@ -1,12 +1,5 @@
-import {
-  Divider,
-  Grid,
-  HStack,
-  Image,
-  List,
-  ListItem,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Divider, HStack, List, ListItem, Text } from "@chakra-ui/react";
+import { Image } from "../../utils/customImage";
 
 import { Quote } from "./types";
 
@@ -19,7 +12,7 @@ export default function QuotesList({ quotes }: QuoteListProps) {
     <List mt={10}>
       {quotes.map((quote) => (
         <ListItem key={quote.quote}>
-          <Text fontSize="xl" as="h2" fontWeight="bold">
+          <Text fontSize="xl" as="h2" fontWeight="bold" color="purple.500">
             {quote.character}
           </Text>
           <HStack>
@@ -27,15 +20,17 @@ export default function QuotesList({ quotes }: QuoteListProps) {
               {quote.episode} - {quote.season}
             </Text>
           </HStack>
-          <Grid mt={3} gap={5} templateColumns="auto auto">
-            <Image
-              src={`/images/${quote.character}.jpg`}
-              w={[100, 150]}
-              h={[100, 150]}
-              rounded="full"
-              alt={quote.character}
-              objectFit="cover"
-            />
+          <HStack mt={3} gap={5}>
+            <Box minW={[100, 150]}>
+              <Image
+                src={`/images/${quote.character}.jpg`}
+                width={150}
+                height={150}
+                rounded="full"
+                alt={quote.character}
+                objectFit="cover"
+              />
+            </Box>
             <Text
               fontSize={{ md: "xl" }}
               as="p"
@@ -44,7 +39,7 @@ export default function QuotesList({ quotes }: QuoteListProps) {
             >
               {quote.quote}
             </Text>
-          </Grid>
+          </HStack>
           <Divider mt={5} />
         </ListItem>
       ))}
