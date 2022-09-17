@@ -60,8 +60,7 @@ export default function Documentacion() {
       </Head>
 
       <Layout>
-        <H1>Monogatari Quotes API</H1>
-
+        <H1 mt={10}>Monogatari Quotes API</H1>
         <DocumentationSection title="Contribuir">
           <HStack>
             <Text>
@@ -74,7 +73,7 @@ export default function Documentacion() {
               target="_black"
               rel="noreferrer noopener"
             >
-              <Github />
+              <Github width={40} height={40} />
             </a>
           </HStack>
         </DocumentationSection>

@@ -1,7 +1,7 @@
-const Github = () => (
+const Github = ({ width, height }: { width: number; height: number }) => (
   <svg
-    width={40}
-    height={40}
+    width={width}
+    height={height}
     viewBox="0 0 16 16"
     style={{
       msTransform: "rotate(360deg)",
