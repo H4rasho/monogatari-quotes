@@ -1,20 +1,15 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { readFile } from "fs/promises";
-
-type Data = {
-  name: string;
-};
+import { getQuotes } from "../../../core/quotes/service";
+import { Quote } from "../../../core/quotes/types";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<Quote[]>
 ) {
-  const { limit, offset } = req.query;
-  const data = await readFile("./quotes/data.json", "utf-8");
-  const quotes = JSON.parse(data);
+  const limit = req.query.limit as string;
+  const offset = req.query.offset as string;
+  const { results } = await getQuotes(limit, offset);
 
-  const result = quotes.slice(offset, limit);
-  
-  res.status(200).json(result);
+  res.status(200).json(results);
 }

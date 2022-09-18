@@ -1,9 +1,9 @@
 import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
-import { API_URL } from "../config";
 import H1 from "../components/headings/H1";
 import Layout from "../components/Layout";
+import { getQuotes } from "../core/quotes/service";
 
 interface Props {
   quotes: Quote[];
@@ -29,12 +29,11 @@ const Home = ({ quotes }: Props) => {
 export default Home;
 
 export async function getStaticProps() {
-  const data = await fetch(`${API_URL}/api/quotes?limit=4`);
-  const quotes = await data.json();
+  const { results } = await getQuotes();
 
   return {
     props: {
-      quotes,
+      quotes: results,
     },
   };
 }
