@@ -8,7 +8,8 @@ export const getQuotes = async (): Promise<{
   const { data: quotes, error } = await supabase.from("quotes").select(`
     *,
     characters (
-      name
+      name,
+      avatar
     ),
     episodes (
       name,

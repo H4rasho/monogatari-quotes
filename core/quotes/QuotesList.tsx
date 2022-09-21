@@ -13,21 +13,21 @@ export default function QuotesList({ quotes }: QuoteListProps) {
       {quotes.map((quote) => (
         <ListItem key={quote.quote}>
           <Text fontSize="xl" as="h2" fontWeight="bold" color="purple.500">
-            {quote.character}
+            {quote.characters.name}
           </Text>
           <HStack>
             <Text as="h3" fontWeight="semibold" textColor="GrayText">
-              {quote.episode} - {quote.season}
+              {quote.episodes.name} - {quote.episodes.seasons.name}
             </Text>
           </HStack>
           <HStack mt={3} gap={5}>
             <Box minW={[100, 150]}>
               <Image
-                src={`/images/${quote.character}.jpg`}
+                src={quote.characters.avatar}
                 width={150}
                 height={150}
                 rounded="full"
-                alt={quote.character}
+                alt={quote.characters.name}
                 objectFit="cover"
               />
             </Box>

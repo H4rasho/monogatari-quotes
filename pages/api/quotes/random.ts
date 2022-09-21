@@ -8,9 +8,11 @@ export default async function handler(
   res: NextApiResponse<Quote>
 ) {
   const { results } = await getQuotes();
-  const randomNumber = Math.floor(Math.random() * results.length);
+  if (results) {
+    const randomNumber = Math.floor(Math.random() * results.length);
+    const result = results[randomNumber];
+    return res.status(200).json(result);
+  }
 
-  const result = results[randomNumber];
-
-  res.status(200).json(result);
+  return res.status(500).json({} as Quote);
 }
