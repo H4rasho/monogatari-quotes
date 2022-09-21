@@ -1,14 +1,23 @@
-import { readFile } from "fs/promises";
+import { supabase } from "../database";
 import { Quote } from "./types";
 
-export const getQuotes = async (
-  limit?: string,
-  offset?: string
-): Promise<{ results: Quote[] }> => {
-  const data = await readFile("./quotes/data.json", "utf-8");
-  const quotes = JSON.parse(data);
+export const getQuotes = async (): Promise<{
+  results?: Quote[];
+  error?: unknown;
+}> => {
+  const { data: quotes, error } = await supabase.from("quotes").select(`
+    *,
+    characters (
+      name,
+      avatar
+    ),
+    episodes (
+      name,
+      seasons (
+        name
+      )
+    )
+  `);
 
-  const results = quotes.slice(offset, limit);
-
-  return { results };
+  return { results: quotes, error };
 };

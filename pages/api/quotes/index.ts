@@ -9,7 +9,14 @@ export default async function handler(
 ) {
   const limit = req.query.limit as string;
   const offset = req.query.offset as string;
-  const { results } = await getQuotes(limit, offset);
+  const { results } = await getQuotes();
+  if (results) {
+    const result = results.slice(
+      parseInt(offset),
+      parseInt(offset) + parseInt(limit)
+    );
+    return res.status(200).json(result);
+  }
 
-  res.status(200).json(results);
+  return res.status(500).json([] as Quote[]);
 }

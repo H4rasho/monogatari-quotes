@@ -13,7 +13,6 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import Layout from "../components/Layout";
-import { API_URL } from "../config";
 import Github from "../components/icons/Github";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
@@ -24,6 +23,7 @@ import DocumentationSection from "../components/documentation/DocumentationSecti
 /**
   CONSTANTS
 */
+const API_URL = "https://monogatari-quotes.vercel.app";
 const API_BASE_URL = `${API_URL}/api/quotes`;
 const API_URL_WITH_PAGINATION = `${API_BASE_URL}/?limit=4&offset=3`;
 const API_URL_RANDOM = `${API_BASE_URL}/random`;
