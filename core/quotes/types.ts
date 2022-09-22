@@ -1,11 +1,9 @@
+import { Character } from "../characters/types";
+
 export interface Quote {
   id: string;
   quote: string;
-  characters: {
-    id: string;
-    name: string;
-    avatar: string;
-  };
+  characters: Character;
   episodes: {
     id: string;
     name: string;
