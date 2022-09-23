@@ -1,4 +1,4 @@
-import { Alert, AlertIcon, Button, Flex, useToast } from "@chakra-ui/react";
+import { Button, Flex, useToast } from "@chakra-ui/react";
 
 export default function DocumentationItem({
   description,
