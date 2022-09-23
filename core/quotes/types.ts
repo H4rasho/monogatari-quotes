@@ -1,4 +1,5 @@
 import { Character } from "../characters/types";
+import { Season } from "../seasons/types";
 
 export interface Quote {
   id: string;
@@ -7,9 +8,6 @@ export interface Quote {
   episodes: {
     id: string;
     name: string;
-    seasons: {
-      id: string;
-      name: string;
-    };
+    seasons: Season;
   };
 }
