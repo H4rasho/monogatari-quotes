@@ -2,15 +2,22 @@ import { FormControl, FormLabel, Select, Textarea } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 import { getCachedCharacters } from "../core/characters/service";
 import { Character } from "../core/characters/types";
+import { getEpisodes } from "../core/episodes/service";
+import { Episode } from "../core/episodes/types";
 import { getSeasons } from "../core/seasons/service";
 import { Season } from "../core/seasons/types";
 
 interface ContributeProps {
   characters: Character[];
   seasons: Season[];
+  episodes: Episode[];
 }
 
-export default function Contribute({ characters, seasons }: ContributeProps) {
+export default function Contribute({
+  characters,
+  seasons,
+  episodes,
+}: ContributeProps) {
   return (
     <Layout>
       <FormControl>
@@ -31,7 +38,13 @@ export default function Contribute({ characters, seasons }: ContributeProps) {
           ))}
         </Select>
         <FormLabel>Episode</FormLabel>
-        <Select placeholder="Kizumonogatari I: Tekketsu-hen"></Select>
+        <Select placeholder="Kizumonogatari I: Tekketsu-hen">
+          {episodes.map((episode) => (
+            <option key={episode.id} value={episode.id}>
+              {episode.name}
+            </option>
+          ))}
+        </Select>
         <FormLabel>Frase</FormLabel>
         <Textarea placeholder="Koyomi Araragi..."></Textarea>
       </FormControl>
@@ -42,11 +55,13 @@ export default function Contribute({ characters, seasons }: ContributeProps) {
 export async function getStaticProps() {
   const { results: characters } = await getCachedCharacters();
   const { results: seasons } = await getSeasons();
+  const { results: episodes } = await getEpisodes();
 
   return {
     props: {
       characters,
       seasons,
+      episodes,
     },
   };
 }
