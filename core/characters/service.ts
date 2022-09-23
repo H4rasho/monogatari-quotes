@@ -5,7 +5,7 @@ export const getCachedCharacters = async (): Promise<{
   results?: Character[];
   error?: unknown;
 }> => {
-  let { data: characters, error } = await supabase
+  const { data: characters, error } = await supabase
     .from("characters")
     .select("*");
 
