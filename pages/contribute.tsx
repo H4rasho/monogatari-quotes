@@ -1,53 +1,24 @@
-import { FormControl, FormLabel, Select, Textarea } from "@chakra-ui/react";
+import H1 from "../components/headings/H1";
 import Layout from "../components/Layout";
 import { getCachedCharacters } from "../core/characters/service";
 import { Character } from "../core/characters/types";
 import { getEpisodes } from "../core/episodes/service";
 import { Episode } from "../core/episodes/types";
+import QuoteForm from "../core/quotes/components/form";
 import { getSeasons } from "../core/seasons/service";
 import { Season } from "../core/seasons/types";
 
-interface ContributeProps {
+export interface ContributeProps {
   characters: Character[];
   seasons: Season[];
   episodes: Episode[];
 }
 
-export default function Contribute({
-  characters,
-  seasons,
-  episodes,
-}: ContributeProps) {
+export default function Contribute(props: ContributeProps) {
   return (
     <Layout>
-      <FormControl>
-        <FormLabel>Personaje</FormLabel>
-        <Select placeholder="Koyomi Araragi...">
-          {characters.map((character) => (
-            <option key={character.id} value={character.id}>
-              {character.name}
-            </option>
-          ))}
-        </Select>
-        <FormLabel>Season</FormLabel>
-        <Select placeholder="Kizumonogatari....">
-          {seasons.map((season) => (
-            <option key={season.id} value={season.id}>
-              {season.name}
-            </option>
-          ))}
-        </Select>
-        <FormLabel>Episode</FormLabel>
-        <Select placeholder="Kizumonogatari I: Tekketsu-hen">
-          {episodes.map((episode) => (
-            <option key={episode.id} value={episode.id}>
-              {episode.name}
-            </option>
-          ))}
-        </Select>
-        <FormLabel>Frase</FormLabel>
-        <Textarea placeholder="Koyomi Araragi..."></Textarea>
-      </FormControl>
+      <H1>Contribuir</H1>
+      <QuoteForm {...props} />
     </Layout>
   );
 }

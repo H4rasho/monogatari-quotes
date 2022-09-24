@@ -7,3 +7,9 @@ export interface Quote {
   characters: Character;
   episodes: Episode;
 }
+
+export interface CreateQuote {
+  quote: string;
+  characterId: string;
+  episodeId: string;
+}
