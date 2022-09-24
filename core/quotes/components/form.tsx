@@ -10,6 +10,7 @@ import {
 import { CreateQuote } from "../types";
 import { ContributeProps } from "../../../pages/contribute";
 import { Season } from "../../seasons/types";
+import { createQuote } from "../service";
 
 export default function QuoteForm({
   characters,
@@ -17,7 +18,7 @@ export default function QuoteForm({
   episodes,
 }: ContributeProps) {
   const [quoteForm, setQuoteForm] = useState<CreateQuote>({
-    characterId: "",
+    authorId: "",
     episodeId: "",
     quote: "",
   });
@@ -25,9 +26,12 @@ export default function QuoteForm({
     seasons[0].id
   );
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(quoteForm);
+    const { error } = await createQuote(quoteForm);
+    if (error) {
+      throw error;
+    }
   };
 
   return (
@@ -35,9 +39,9 @@ export default function QuoteForm({
       <FormControl>
         <FormLabel>Personaje</FormLabel>
         <Select
-          value={quoteForm.characterId}
+          value={quoteForm.authorId}
           onChange={(e) =>
-            setQuoteForm({ ...quoteForm, characterId: e.target.value })
+            setQuoteForm({ ...quoteForm, authorId: e.target.value })
           }
           placeholder="Koyomi Araragi..."
         >

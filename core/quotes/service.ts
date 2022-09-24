@@ -1,5 +1,5 @@
 import { supabase } from "../database";
-import { Quote } from "./types";
+import { CreateQuote, Quote } from "./types";
 
 export const getQuotes = async (): Promise<{
   results?: Quote[];
@@ -20,4 +20,10 @@ export const getQuotes = async (): Promise<{
   `);
 
   return { results: quotes, error };
+};
+
+export const createQuote = async (quote: CreateQuote) => {
+  const { data, error } = await supabase.from("quotes").insert(quote);
+
+  return { results: data, error };
 };

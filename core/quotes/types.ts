@@ -10,6 +10,6 @@ export interface Quote {
 
 export interface CreateQuote {
   quote: string;
-  characterId: string;
+  authorId: string;
   episodeId: string;
 }
