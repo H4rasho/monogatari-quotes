@@ -78,7 +78,14 @@ export default function QuoteForm({
           ))}
         </Select>
         <FormLabel>Frase</FormLabel>
-        <Textarea placeholder="Koyomi Araragi..." required></Textarea>
+        <Textarea
+          placeholder="Koyomi Araragi..."
+          value={quoteForm.quote}
+          onChange={(e) =>
+            setQuoteForm({ ...quoteForm, quote: e.target.value })
+          }
+          required
+        ></Textarea>
         <Button mt={4} colorScheme="teal" type="submit" width="full">
           Enviar
         </Button>
