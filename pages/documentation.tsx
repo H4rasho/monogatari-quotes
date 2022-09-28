@@ -111,8 +111,10 @@ export default function Documentacion() {
           <TableContainer px={5} mt={5}>
             <Table variant="simple">
               <Thead>
-                <Th>Campo</Th>
-                <Th>Tipo</Th>
+                <Tr>
+                  <Th>Campo</Th>
+                  <Th>Tipo</Th>
+                </Tr>
               </Thead>
               <Tbody>
                 {QUOTES_API_RESPONSE.map((item) => (
