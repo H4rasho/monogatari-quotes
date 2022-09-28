@@ -12,13 +12,13 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import Layout from "../components/Layout";
-import Github from "../components/icons/Github";
+import Layout from "../ui/Layout";
+import Github from "../ui/icons/Github";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
-import H1 from "../components/headings/H1";
-import DocumentationItem from "../components/documentation/DocumentationItem";
-import DocumentationSection from "../components/documentation/DocumentationSection";
+import H1 from "../ui/headings/H1";
+import DocumentationItem from "../core/documentation/DocumentationItem";
+import DocumentationSection from "../core/documentation/DocumentationSection";
 
 /**
   CONSTANTS

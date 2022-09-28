@@ -1,16 +1,11 @@
 import { useState } from "react";
-import {
-  Button,
-  FormControl,
-  FormLabel,
-  Select,
-  Textarea,
-} from "@chakra-ui/react";
+import { FormControl, FormLabel, Select, Textarea } from "@chakra-ui/react";
 
 import { CreateQuote } from "../types";
 import { ContributeProps } from "../../../pages/contribute";
 import { Season } from "../../seasons/types";
 import { createQuote } from "../service";
+import PrimaryButton from "../../../ui/buttons/primary";
 
 export default function QuoteForm({
   characters,
@@ -86,9 +81,7 @@ export default function QuoteForm({
           }
           required
         ></Textarea>
-        <Button mt={4} colorScheme="teal" type="submit" width="full">
-          Enviar
-        </Button>
+        <PrimaryButton mt={5}>Enviar</PrimaryButton>
       </FormControl>
     </form>
   );

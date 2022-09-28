@@ -1,8 +1,8 @@
 import Head from "next/head";
 import QuotesList from "../core/quotes/QuotesList";
 import { Quote } from "../core/quotes/types";
-import H1 from "../components/headings/H1";
-import Layout from "../components/Layout";
+import H1 from "../ui/headings/H1";
+import Layout from "../ui/Layout";
 import { getQuotes } from "../core/quotes/service";
 
 interface Props {

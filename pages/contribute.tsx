@@ -1,5 +1,5 @@
-import H1 from "../components/headings/H1";
-import Layout from "../components/Layout";
+import H1 from "../ui/headings/H1";
+import Layout from "../ui/Layout";
 import { getCachedCharacters } from "../core/characters/service";
 import { Character } from "../core/characters/types";
 import { getEpisodes } from "../core/episodes/service";

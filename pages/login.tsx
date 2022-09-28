@@ -1,7 +1,7 @@
 import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { useState } from "react";
-import H1 from "../components/headings/H1";
-import Layout from "../components/Layout";
+import H1 from "../ui/headings/H1";
+import Layout from "../ui/Layout";
 import { supabase } from "../core/database";
 
 export default function Login() {
