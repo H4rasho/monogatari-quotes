@@ -7,7 +7,6 @@ import { supabase } from "../core/database";
 export default function Login() {
   const [loginValues, setLoginValues] = useState({
     email: "",
-    password: "",
   });
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -28,14 +27,6 @@ export default function Login() {
             type="email"
             onChange={(e) =>
               setLoginValues({ ...loginValues, email: e.target.value })
-            }
-          />
-          <FormLabel>Passwrod</FormLabel>
-          <Input
-            id="password"
-            type="password"
-            onChange={(e) =>
-              setLoginValues({ ...loginValues, password: e.target.value })
             }
           />
           <Button type="submit" w="full" mt={5}>
