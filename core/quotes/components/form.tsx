@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FormControl, FormLabel, Select, Textarea } from "@chakra-ui/react";
 
 import { CreateQuote } from "../types";
@@ -21,6 +21,16 @@ export default function QuoteForm({
     seasons[0].id
   );
 
+  const [filteredEpisodes, setFilteredEpisodes] = useState<
+    ContributeProps["episodes"]
+  >([]);
+
+  useEffect(() => {
+    setFilteredEpisodes(
+      episodes.filter((episode) => episode.seasonId === seasonIdValue)
+    );
+  }, [seasonIdValue]);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { error } = await createQuote(quoteForm);
@@ -38,10 +48,13 @@ export default function QuoteForm({
           onChange={(e) =>
             setQuoteForm({ ...quoteForm, authorId: e.target.value })
           }
-          placeholder="Koyomi Araragi..."
         >
           {characters.map((character) => (
-            <option key={character.id} value={character.id}>
+            <option
+              key={character.id}
+              value={character.id}
+              onChange={(e) => setSeasonIdValue(e.currentTarget.value)}
+            >
               {character.name}
             </option>
           ))}
@@ -50,7 +63,6 @@ export default function QuoteForm({
         <Select
           value={seasonIdValue}
           onChange={(e) => setSeasonIdValue(e.target.value)}
-          placeholder="Kizumonogatari...."
         >
           {seasons.map((season) => (
             <option key={season.id} value={season.id}>
@@ -64,9 +76,8 @@ export default function QuoteForm({
           onChange={(e) =>
             setQuoteForm({ ...quoteForm, episodeId: e.target.value })
           }
-          placeholder="Kizumonogatari I: Tekketsu-hen"
         >
-          {episodes.map((episode) => (
+          {filteredEpisodes.map((episode) => (
             <option key={episode.id} value={episode.id}>
               {episode.name}
             </option>
@@ -74,7 +85,6 @@ export default function QuoteForm({
         </Select>
         <FormLabel>Frase</FormLabel>
         <Textarea
-          placeholder="Koyomi Araragi..."
           value={quoteForm.quote}
           onChange={(e) =>
             setQuoteForm({ ...quoteForm, quote: e.target.value })

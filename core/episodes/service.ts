@@ -5,6 +5,9 @@ export const getEpisodes = async (): Promise<{
   results?: Episode[];
   error?: unknown;
 }> => {
-  const { data: episodes, error } = await supabase.from("episodes").select("*");
+  const { data: episodes, error } = await supabase
+    .from("episodes")
+    .select("*")
+    .order("number", { ascending: true });
   return { results: episodes, error };
 };
