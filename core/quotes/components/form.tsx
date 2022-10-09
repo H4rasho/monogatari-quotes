@@ -49,6 +49,11 @@ export default function QuoteForm({
       description: "La frase se ha creado correctamente",
       status: "success",
     });
+    setQuoteForm({
+      authorId: "",
+      episodeId: "",
+      quote: "",
+    });
   };
 
   return (
