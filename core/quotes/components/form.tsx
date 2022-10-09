@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { FormControl, FormLabel, Select, Textarea } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormLabel,
+  Select,
+  Textarea,
+  useToast,
+} from "@chakra-ui/react";
 
 import { CreateQuote } from "../types";
 import { ContributeProps } from "../../../pages/contribute";
@@ -12,6 +18,7 @@ export default function QuoteForm({
   seasons,
   episodes,
 }: ContributeProps) {
+  const toast = useToast();
   const [quoteForm, setQuoteForm] = useState<CreateQuote>({
     authorId: "",
     episodeId: "",
@@ -37,6 +44,11 @@ export default function QuoteForm({
     if (error) {
       throw error;
     }
+    toast({
+      title: "Frase creada",
+      description: "La frase se ha creado correctamente",
+      status: "success",
+    });
   };
 
   return (
