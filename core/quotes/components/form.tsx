@@ -42,7 +42,11 @@ export default function QuoteForm({
     e.preventDefault();
     const { error } = await createQuote(quoteForm);
     if (error) {
-      throw error;
+      toast({
+        title: "Error",
+        description: error.message,
+        status: "error",
+      });
     }
     toast({
       title: "Frase creada",
