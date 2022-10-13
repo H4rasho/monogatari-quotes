@@ -7,7 +7,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Quote>
 ) {
-  const { results } = await getQuotes();
+  const { results } = await getQuotes(0, 10);
   if (results) {
     const randomNumber = Math.floor(Math.random() * results.length);
     const result = results[randomNumber];
