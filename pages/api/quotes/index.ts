@@ -5,11 +5,11 @@ import { Quote } from "../../../core/quotes/types";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Quote[]>
+  res: NextApiResponse<Quote[] | unknown>
 ) {
   const limit = req.query.limit ?? Infinity;
   const offset = req.query.offset ?? 0;
   const { results, error } = await getQuotes(Number(offset), Number(limit));
   if (results) return res.json(results);
-  if (error) throw error;
+  if (error) return res.status(500).json(error);
 }
