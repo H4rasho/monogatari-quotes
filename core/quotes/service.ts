@@ -1,11 +1,17 @@
 import { supabase } from "../database";
 import { CreateQuote, Quote } from "./types";
 
-export const getQuotes = async (): Promise<{
+export const getQuotes = async (
+  offset: number,
+  limit: number
+): Promise<{
   results?: Quote[];
   error?: unknown;
 }> => {
-  const { data: quotes, error } = await supabase.from("quotes").select(`
+  const { data: quotes, error } = await supabase
+    .from("quotes")
+    .select(
+      `
     *,
     characters (
       name,
@@ -17,8 +23,9 @@ export const getQuotes = async (): Promise<{
         name
       )
     )
-  `);
-
+  `
+    )
+    .range(offset, offset + limit - 1);
   return { results: quotes, error };
 };
 

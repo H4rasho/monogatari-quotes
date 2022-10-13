@@ -29,7 +29,7 @@ const Home = ({ quotes }: Props) => {
 export default Home;
 
 export async function getStaticProps() {
-  const { results } = await getQuotes();
+  const { results } = await getQuotes(0, 4);
 
   return {
     props: {

@@ -7,16 +7,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Quote[]>
 ) {
-  const limit = req.query.limit as string;
-  const offset = req.query.offset as string;
-  const { results } = await getQuotes();
-  if (results) {
-    const result = results.slice(
-      parseInt(offset),
-      parseInt(offset) + parseInt(limit)
-    );
-    return res.status(200).json(result);
-  }
-
-  return res.status(500).json([] as Quote[]);
+  const limit = req.query.limit ?? Infinity;
+  const offset = req.query.offset ?? 0;
+  const { results, error } = await getQuotes(Number(offset), Number(limit));
+  if (results) return res.json(results);
+  if (error) throw error;
 }
