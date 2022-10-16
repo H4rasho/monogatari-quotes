@@ -8,6 +8,14 @@ interface QuoteListProps {
 }
 
 export default function QuotesList({ quotes }: QuoteListProps) {
+  if (quotes.length === 0) {
+    return (
+      <Text mt={10}>
+        No hay frases para mostrar. Intenta con otra búsqueda o con otra página.
+      </Text>
+    );
+  }
+
   return (
     <List mt={10}>
       {quotes.map((quote) => (
