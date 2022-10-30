@@ -1,5 +1,5 @@
 import Head from "next/head";
-import QuotesList from "../core/quotes/QuotesList";
+import QuotesList from "../core/quotes/components/list";
 import { Quote } from "../core/quotes/types";
 import H1 from "../ui/headings/H1";
 import Layout from "../ui/Layout";

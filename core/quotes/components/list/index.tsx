@@ -1,7 +1,7 @@
 import { Box, Divider, HStack, List, ListItem, Text } from "@chakra-ui/react";
-import { Image } from "../../utils/customImage";
+import { Image } from "../../../../utils/customImage";
 
-import { Quote } from "./types";
+import { Quote } from "../../types";
 
 interface QuoteListProps {
   quotes: Quote[];
