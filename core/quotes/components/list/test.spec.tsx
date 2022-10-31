@@ -28,6 +28,19 @@ describe("QuoteList", () => {
   it("Should be show the quote", () => {
     render(<QuotesList quotes={QUOTES} />);
 
-    expect(screen.getByText("quote 1")).toBeInTheDocument();
+    expect(screen.getByText(/quote 1/i)).toBeInTheDocument();
+  });
+
+  it("Should be show quote details", () => {
+    render(<QuotesList quotes={QUOTES} />);
+
+    expect(screen.getByText(/character 1/i)).toBeInTheDocument();
+    expect(screen.getByText(/episode 1/i)).toBeInTheDocument();
+  });
+
+  it("Should be show a message when there are no quotes", () => {
+    render(<QuotesList quotes={[]} />);
+
+    expect(screen.getByText(/No hay frases para mostrar/i)).toBeInTheDocument();
   });
 });
