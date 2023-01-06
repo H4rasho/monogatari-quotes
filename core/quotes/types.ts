@@ -4,8 +4,8 @@ import { Episode } from "../episodes/types";
 export interface Quote {
   id: string;
   quote: string;
-  characters: Character;
-  episodes: Episode;
+  character: Character;
+  episode: Episode;
 }
 
 export interface CreateQuote {
