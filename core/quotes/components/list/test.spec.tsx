@@ -7,16 +7,16 @@ const QUOTES: Quote[] = [
   {
     id: "1",
     quote: "quote 1",
-    characters: {
+    character: {
       id: "1",
       name: "character 1",
       avatar: "/avatar 1",
     },
-    episodes: {
+    episode: {
       id: "1",
       name: "episode 1",
       seasonId: "1",
-      seasons: {
+      season: {
         id: "1",
         name: "season 1",
       },
