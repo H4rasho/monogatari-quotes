@@ -1,0 +1,542 @@
+[
+    {
+        "id": "a84b745b-7fd6-4b91-a87e-fb3fb7ebb255",
+        "name": "Armadura Shinobu - Parte 5",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 11
+    },
+    {
+        "id": "32bad3e1-3ac9-4e64-85bc-ae21ef8af9a1",
+        "name": "Serpiente Nadeko - Parte 1",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 9
+    },
+    {
+        "id": "dfe3660a-0cde-40a2-b649-88d9098ca7f3",
+        "name": "Mono Suruga - Parte 2",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 7
+    },
+    {
+        "id": "02ce70e4-63b6-4e5f-9137-e76f400af93c",
+        "name": "Tiempo Shinobu - Parte 3",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 17
+    },
+    {
+        "id": "2165e0b1-5726-41f7-a14c-c039ecffc44f",
+        "name": "Final Hitagi - Parte 1",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 18
+    },
+    {
+        "id": "6bdcbba5-a603-4e15-af36-c3b0ee6dea85",
+        "name": "Gato Tsubasa - Parte 3",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 13
+    },
+    {
+        "id": "01898937-2ce1-4bab-9d29-15c2d295edad",
+        "name": "Gato Tsubasa - Parte 4",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 14
+    },
+    {
+        "id": "ed27fa09-ed2c-4366-94d3-afd698c2e6b6",
+        "name": "Gato Tsubasa - Parte 5",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 15
+    },
+    {
+        "id": "cf02991a-7f90-4fdf-86a1-5b4c04462bb0",
+        "name": "Abeja Karen - Parte 1",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 1
+    },
+    {
+        "id": "9cdd6d2a-bfca-495a-b828-78fc740a66b0",
+        "name": "Abeja Karen - Parte 2",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 2
+    },
+    {
+        "id": "6de88670-2ded-475e-bc98-3f701a275d45",
+        "name": "Abeja Karen - Parte 3",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 3
+    },
+    {
+        "id": "ac38a07e-ec9f-4f76-ae37-cf9c5bcdeeb2",
+        "name": "Abeja Karen - Parte 4",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 4
+    },
+    {
+        "id": "0e43729d-443b-43a1-b2f9-3c0b01044b8e",
+        "name": "Abeja Karen - Parte 5",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 5
+    },
+    {
+        "id": "532169f3-7bb9-4053-893a-439b34ebf38f",
+        "name": "Abeja Karen - Parte 6",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 6
+    },
+    {
+        "id": "473e08ac-4acf-4335-9943-e30b1b3a932c",
+        "name": "Abeja Karen - Parte 7",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 7
+    },
+    {
+        "id": "db84998d-78a1-406f-8870-3b54cb5f4311",
+        "name": "Fénix Tsukihi - Parte 1",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 8
+    },
+    {
+        "id": "d2cf6c04-484f-441b-87da-543745ae2e99",
+        "name": "Fénix Tsukihi - Parte 2",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 9
+    },
+    {
+        "id": "f697b697-97aa-435d-a75e-31103bdc607d",
+        "name": "Fénix Tsukihi - Parte 3",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 10
+    },
+    {
+        "id": "fa2883a2-69c2-45a1-ae0e-0c37034d9c2c",
+        "name": "Fénix Tsukihi - Parte 4",
+        "seasonId": "7357d0c5-e7b7-4b96-a552-72aff6b52c9e",
+        "number": 11
+    },
+    {
+        "id": "5aaa543f-b918-45ba-8000-79b1851842a2",
+        "name": "Familia Tsubasa - Parte 1",
+        "seasonId": "ad735fbf-7752-44f2-82f5-36a7c13feba7",
+        "number": 1
+    },
+    {
+        "id": "40c2c284-1a83-41a5-8c8b-95d3c97efba6",
+        "name": "Familia Tsubasa - Parte 2",
+        "seasonId": "ad735fbf-7752-44f2-82f5-36a7c13feba7",
+        "number": 2
+    },
+    {
+        "id": "2a9014af-2f36-430a-9a7f-e71fff1f6228",
+        "name": "Familia Tsubasa - Parte 3",
+        "seasonId": "ad735fbf-7752-44f2-82f5-36a7c13feba7",
+        "number": 3
+    },
+    {
+        "id": "9aec0ccf-4656-4e5b-83ff-791f5a742468",
+        "name": "Familia Tsubasa - Parte 4",
+        "seasonId": "ad735fbf-7752-44f2-82f5-36a7c13feba7",
+        "number": 4
+    },
+    {
+        "id": "1237d957-5e80-43e4-962a-f80fb5c10110",
+        "name": "Tigre Tsubasa - Parte 1",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 1
+    },
+    {
+        "id": "b8fba440-dafe-46a0-85e5-2af01718380a",
+        "name": "Tigre Tsubasa - Parte 2",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 2
+    },
+    {
+        "id": "ed300cce-80d2-424c-a0ee-efc94144b278",
+        "name": "Tigre Tsubasa - Parte 3",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 3
+    },
+    {
+        "id": "240d76c0-57db-488d-b8fa-b4f19caa4da0",
+        "name": "Tigre Tsubasa - Parte 4",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 4
+    },
+    {
+        "id": "55e73f46-f617-49f1-aa8b-da2ca7b552e1",
+        "name": "Tigre Tsubasa - Parte 5",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 5
+    },
+    {
+        "id": "458fc3f1-1a86-4fe2-8713-1c95b46dd4b2",
+        "name": "Jiangshi Mayoi - Parte 2",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 7
+    },
+    {
+        "id": "94666116-ba9f-48a5-8743-5ab21ef79abe",
+        "name": "Jiangshi Mayoi - Parte 3",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 8
+    },
+    {
+        "id": "dc6f80fb-6760-4b37-86ca-1986dd4fb458",
+        "name": "Jiangshi Mayoi - Parte 4",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 9
+    },
+    {
+        "id": "e2637f45-db90-4077-8e91-dde8005ebef4",
+        "name": "Medusa Nadeko - Parte 1",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 10
+    },
+    {
+        "id": "6c367cc9-bd84-4993-a33f-8dd6d4614d8b",
+        "name": "Medusa Nadeko - Parte 2",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 11
+    },
+    {
+        "id": "aa453656-14a0-4729-a511-cf42eca2194d",
+        "name": "Medusa Nadeko - Parte 3",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 12
+    },
+    {
+        "id": "0d7e92b9-d581-4e49-87b5-9ac921e4ac21",
+        "name": "Medusa Nadeko - Parte 4",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 13
+    },
+    {
+        "id": "c2800c6d-c7b9-45e1-9c61-c0675cd620c6",
+        "name": "Tiempo Shinobu - Parte 4",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 14
+    },
+    {
+        "id": "c7391fa3-8339-487d-9407-5c225d276981",
+        "name": "Tiempo Shinobu - Parte 2",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 16
+    },
+    {
+        "id": "cd05e73e-3386-4964-9f4c-d72ce5ac5090",
+        "name": "Final Hitagi - Parte 2",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 19
+    },
+    {
+        "id": "0b54cdc4-cb84-400b-9c4b-531436062a0e",
+        "name": "Final Hitagi - Parte 3",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 20
+    },
+    {
+        "id": "ea5d36a2-76d0-4529-8523-8d08d289c5b5",
+        "name": "Final Hitagi - Parte 4",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 21
+    },
+    {
+        "id": "2ebe7a0c-d4dd-44b5-b711-7572f2604306",
+        "name": "Final Hitagi - Parte 5",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 22
+    },
+    {
+        "id": "c7ea8f7b-4040-49ae-a90d-db22b58bd0ff",
+        "name": "Final Hitagi - Parte 6",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 23
+    },
+    {
+        "id": "10263fd7-ee16-4d3f-be18-132da64fabd5",
+        "name": "Demonio Suruga - Parte 1",
+        "seasonId": "69daf4e9-a682-4756-a4f7-2fd2380f610b",
+        "number": 1
+    },
+    {
+        "id": "d3c7bdd3-9610-4540-9180-63016904d52b",
+        "name": "Demonio Suruga - Parte 2",
+        "seasonId": "69daf4e9-a682-4756-a4f7-2fd2380f610b",
+        "number": 2
+    },
+    {
+        "id": "0800f259-d2e4-4e91-aee0-27a7d61c6bf2",
+        "name": "Demonio Suruga - Parte 3",
+        "seasonId": "69daf4e9-a682-4756-a4f7-2fd2380f610b",
+        "number": 3
+    },
+    {
+        "id": "3c5a4289-87bd-4f3b-84f2-23ef18b43521",
+        "name": "Demonio Suruga - Parte 4",
+        "seasonId": "69daf4e9-a682-4756-a4f7-2fd2380f610b",
+        "number": 4
+    },
+    {
+        "id": "8e810bc8-cd93-4932-84c5-08a0733fd384",
+        "name": "Demonio Suruga - Parte 5",
+        "seasonId": "69daf4e9-a682-4756-a4f7-2fd2380f610b",
+        "number": 5
+    },
+    {
+        "id": "b94842f6-d746-4c89-a6e8-18eefc15234d",
+        "name": "Muñeca Yotsugi - Parte 2",
+        "seasonId": "0779e943-9c32-4174-b7bc-27625b47a641",
+        "number": 2
+    },
+    {
+        "id": "5cc212bf-bfb1-49e0-8505-e6cb4228b13b",
+        "name": "Muñeca Yotsugi - Parte 1",
+        "seasonId": "0779e943-9c32-4174-b7bc-27625b47a641",
+        "number": 1
+    },
+    {
+        "id": "99bb0583-8ea7-4140-aea4-c1286ede1802",
+        "name": "Muñeca Yotsugi - Parte 3",
+        "seasonId": "0779e943-9c32-4174-b7bc-27625b47a641",
+        "number": 3
+    },
+    {
+        "id": "28222717-f6ad-4047-a303-6945c12151d9",
+        "name": "Muñeca Yotsugi - Parte 4",
+        "seasonId": "0779e943-9c32-4174-b7bc-27625b47a641",
+        "number": 4
+    },
+    {
+        "id": "935ff561-da3e-46a0-acd2-3cc3a576d4c9",
+        "name": "Pérdida Sodachi - Parte 3",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 6
+    },
+    {
+        "id": "53d1d1b2-e4fd-45b7-988a-042a0c916a0d",
+        "name": "Fórmula Ougi",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 1
+    },
+    {
+        "id": "b18c4bee-3089-4e63-82b6-d6690186054e",
+        "name": "Acertijo Sodachi - Parte 1",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 2
+    },
+    {
+        "id": "44cea775-7f6f-4e57-a733-af064b734914",
+        "name": "Acertijo Sodachi - Parte 2",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 3
+    },
+    {
+        "id": "816da518-606e-45ea-863c-48319cd17a87",
+        "name": "Pérdida Sodachi - Parte 1",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 4
+    },
+    {
+        "id": "047d5077-e1dd-4a3e-a102-10ed484d7f39",
+        "name": "Pérdida Sodachi - Parte 2",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 5
+    },
+    {
+        "id": "aa902fa2-d6d0-4269-ae2f-8535d178ece4",
+        "name": "Armadura Shinobu - Parte 1",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 7
+    },
+    {
+        "id": "c933b839-a334-4d39-8040-2946d83a5ef3",
+        "name": "Armadura Shinobu - Parte 2",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 8
+    },
+    {
+        "id": "101d6e30-fcf2-484b-84dc-f07fa3c2f2a0",
+        "name": "Armadura Shinobu - Parte 3",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 9
+    },
+    {
+        "id": "a0aed6dc-2fa3-417b-a93d-6291f33498e0",
+        "name": "Armadura Shinobu - Parte 4",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 10
+    },
+    {
+        "id": "6969b5ab-68d6-4cd7-ab78-5e051345fef4",
+        "name": "Gato Tsubasa - Parte 2",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 12
+    },
+    {
+        "id": "fc706aea-3ed9-4a4a-bee2-63919bfcdbb3",
+        "name": "Infierno Mayoi - Parte 1",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 1
+    },
+    {
+        "id": "7cd090d1-689a-45dd-abf9-7fb9752d2ef0",
+        "name": "Infierno Mayoi - Parte 2",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 2
+    },
+    {
+        "id": "99a7f5fb-fab4-4970-993a-2b009a5eeb2d",
+        "name": "Cita Hitagi - Parte 1",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 3
+    },
+    {
+        "id": "acf3ab96-b4d5-4f59-9174-07beaee7486f",
+        "name": "Oscuridad Ougi - Parte 1",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 5
+    },
+    {
+        "id": "05cd2e0d-a791-4c24-b936-ad8d61365e01",
+        "name": "Cita Hitagi - Parte 2",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 4
+    },
+    {
+        "id": "f489e7d4-965b-4e8b-bd6b-92b6d3ca144e",
+        "name": "Oscuridad Ougi - Parte 2",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 6
+    },
+    {
+        "id": "8d8b66b8-fbbc-48bb-95a4-7769ecf77856",
+        "name": "Oscuridad Ougi - Parte 3",
+        "seasonId": "5474f337-39c2-4240-a4c2-6abcaa3bf339",
+        "number": 7
+    },
+    {
+        "id": "1f50383b-6703-4598-9b7f-1264d4b739a9",
+        "name": "Reverso Koyomi - Parte 1",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 1
+    },
+    {
+        "id": "9015a6a7-1b7a-40c8-a8ff-72bcb072591e",
+        "name": "Reverso Koyomi - Parte 2",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 2
+    },
+    {
+        "id": "2d889c4d-6fa0-4b1f-9963-5d066579c49f",
+        "name": "Reverso Koyomi - Parte 3",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 3
+    },
+    {
+        "id": "9a5f2d8b-6e09-411d-b968-12abab02ef0f",
+        "name": "Reverso Koyomi - Parte 5",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 5
+    },
+    {
+        "id": "c4307a41-de32-4bf5-b61e-ad017de441f6",
+        "name": "Reverso Koyomi - Parte 4",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 4
+    },
+    {
+        "id": "eaa2bed4-6a49-48cf-b420-39cc2f3cdeff",
+        "name": "Reverso Koyomi - Parte 6",
+        "seasonId": "6c23ec02-6f4f-4e2a-adac-866fc80d2557",
+        "number": 6
+    },
+    {
+        "id": "f01fb154-ecf4-44e7-af06-4bad6d4b77f4",
+        "name": "Armadura Shinobu - Parte 6",
+        "seasonId": "ce9678d6-1701-4510-b39d-9b76e6139dc2",
+        "number": 12
+    },
+    {
+        "id": "939ebe04-06b4-471d-b7c0-d016a6f6ca0c",
+        "name": "Cangrejo Hitagi - Parte 1",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 1
+    },
+    {
+        "id": "e4b5e8c7-1b11-40a9-9fd4-2979b117d9c8",
+        "name": "Cangrejo Hitagi - Parte 2",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 2
+    },
+    {
+        "id": "71be1a1b-920f-49f7-8b7d-563d8ea7a054",
+        "name": "Caracol Mayoi - Parte 1",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 3
+    },
+    {
+        "id": "ef4cb95e-309c-4a2c-8a59-cb1193cf1fd9",
+        "name": "Caracol Mayoi - Parte 2",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 4
+    },
+    {
+        "id": "32590163-317c-43fc-a02b-f964ad5feb5f",
+        "name": "Caracol Mayoi - Parte 3",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 5
+    },
+    {
+        "id": "726b12a7-77e4-4c1e-b9ea-bd6bdd1a883e",
+        "name": "Mono Suruga - Parte 1",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 6
+    },
+    {
+        "id": "36ba3d5e-522f-4eba-bedb-5567ef58b6fe",
+        "name": "Serpiente Nadeko - Parte 2",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 10
+    },
+    {
+        "id": "257c6dd3-f3d7-4e91-830b-d5c1ec7629f3",
+        "name": "Mono Suruga - Parte 3",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 8
+    },
+    {
+        "id": "555ab929-9449-4738-b7df-6be032c1ab6a",
+        "name": "Gato Tsubasa - Parte 1",
+        "seasonId": "0ae52537-ec84-4b36-b090-1287735750a3",
+        "number": 11
+    },
+    {
+        "id": "dbe87b3a-d888-4375-b140-8f93ab7250f4",
+        "name": "Jiangshi Mayoi - Parte 1",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 6
+    },
+    {
+        "id": "604a6576-1858-428f-863f-d0c952ab24bd",
+        "name": "Tiempo Shinobu - Parte 1",
+        "seasonId": "35e2b8f8-68bf-4747-ad09-0e8104cd243d",
+        "number": 15
+    },
+    {
+        "id": "2f7ca3fa-8eb2-4bd5-a663-d187fa6d649f",
+        "name": "Kizumonogatari I Tekketsu-hen",
+        "seasonId": "9e9b3cef-4431-4bf5-8bfa-4ab4248f5fd2",
+        "number": 1
+    },
+    {
+        "id": "8b9b0ba8-6f0e-4dff-ba9b-3a05f44e5d96",
+        "name": "Kizumonogatari II Nekketsu-hen",
+        "seasonId": "9e9b3cef-4431-4bf5-8bfa-4ab4248f5fd2",
+        "number": 2
+    },
+    {
+        "id": "f7eab0a9-0bf9-48a2-b26d-6f4a4a7c5108",
+        "name": "Kizumonogatari III Reiketsu-hen",
+        "seasonId": "9e9b3cef-4431-4bf5-8bfa-4ab4248f5fd2",
+        "number": 3
+    }
+]
