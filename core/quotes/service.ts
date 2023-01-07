@@ -1,15 +1,14 @@
 import quotes from "../../db/quotes.json";
-import episodes from "../../db/episodes.json";
 import seasons from "../../db/seasons.json";
 import { getCharacterById } from "../characters/service";
+import { getEpisodeById } from "../episodes/service";
 
 export const getQuotes = async (offset: number, limit: number) => {
   try {
     const quotesToRetrun = quotes.map((quote) => {
       const { results: character } = getCharacterById(quote.authorId);
-      const episode = episodes.find(
-        (episode) => episode.id === quote.episodeId
-      );
+      const { results: episode } = getEpisodeById(quote.episodeId);
+
       const season = seasons.find((season) => season.id === episode?.seasonId);
 
       return {
