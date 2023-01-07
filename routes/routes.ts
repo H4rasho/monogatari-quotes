@@ -7,8 +7,4 @@ export const ROUTES = [
     path: "/documentation",
     name: "Documentation",
   },
-  {
-    path: "/contribute",
-    name: "Contribuir",
-  },
 ];
