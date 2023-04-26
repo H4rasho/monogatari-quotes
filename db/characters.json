@@ -3,66 +3,78 @@
         "id": "1621ed03-8dcd-4bd9-8c88-38d2ee167e09",
         "name": "Koyomi Araragi",
         "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Koyomi%20Araragi.jpg?t=2022-09-19T19%3A19%3A35.041Z",
-        "image": "koyomi-araragi.jgp"
+        "image": "https://monogatari-quotes.vercel.app/koyomi-araragi.jgp"
     },
     {
         "id": "3217a130-7c73-447f-a955-e2551099a4f4",
         "name": "Hitagi Senjōgahara",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hitagi%20Senjougahara.jpg"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hitagi%20Senjougahara.jpg",
+        "image": "https://monogatari-quotes.vercel.app/hitagi-senjougahara.jpg"
     },
     {
         "id": "1592de33-5289-4149-b991-0cee280fa1e2",
         "name": "Meme Oshino",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Oshino%20Meme.jpg"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Oshino%20Meme.jpg",
+        "image": "https://monogatari-quotes.vercel.app/oshino-meme.jpg"
     },
     {
         "id": "cf304f5b-3117-407c-bacc-2d14625314f3",
         "name": "Kagenui Yozuru",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Yozuru%20Kagenui.jpg"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Yozuru%20Kagenui.jpg",
+        "image": "https://monogatari-quotes.vercel.app/yozuru-kagenui.jpg"
     },
     {
         "id": "d88f3c9f-bc03-4971-8937-20ae3d49591c",
         "name": "Hanekawa Tsubasa",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hanekawa%20Tsubasa.jpg?t=2022-09-29T02%3A20%3A31.892Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hanekawa%20Tsubasa.jpg?t=2022-09-29T02%3A20%3A31.892Z",
+        "image": "https://monogatari-quotes.vercel.app/hanekawa-tsubasa.jpg"
     },
     {
         "id": "e230db67-0f72-46d4-8f56-f282767f46ca",
         "name": "Oshino Shinobu",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Oshino%20Shinobu.jpg?t=2022-09-29T02%3A22%3A01.697Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Oshino%20Shinobu.jpg?t=2022-09-29T02%3A22%3A01.697Z",
+        "image": "https://monogatari-quotes.vercel.app/oshino-shinobu.jpg"
     },
     {
         "id": "78336441-4bef-4cff-bec0-c093456d807b",
         "name": "Hachikuji Mayoi",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hachikuji%20Mayoi.jpg"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Hachikuji%20Mayoi.jpg",
+        "image": "https://monogatari-quotes.vercel.app/hachikuji-mayoi.jpg"
     },
     {
         "id": "643307dd-44ba-4740-8633-df271561064f",
         "name": "Kaiki Deishuu",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Kaiki%20Deishuu.jpg?t=2022-09-29T02%3A24%3A16.544Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Kaiki%20Deishuu.jpg?t=2022-09-29T02%3A24%3A16.544Z",
+        "image": "https://monogatari-quotes.vercel.app/kaiki-deishuu.jpg"
     },
     {
         "id": "ccc415ac-361d-4848-8368-ad6fe8b86c2e",
         "name": "Suruga Kanbaru",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Suruga%20Kanbaru.jpg?t=2022-09-29T02%3A25%3A08.442Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Suruga%20Kanbaru.jpg?t=2022-09-29T02%3A25%3A08.442Z",
+        "image": "https://monogatari-quotes.vercel.app/suruga-kanbaru.jpg"
     },
     {
         "id": "9819f908-f07d-4c35-9201-d10e5036ef5a",
         "name": "Yotsugi Ononoki",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Yotsugi%20Ononoki.jpg?t=2022-09-29T02%3A25%3A43.452Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Yotsugi%20Ononoki.jpg?t=2022-09-29T02%3A25%3A43.452Z",
+        "image": "https://monogatari-quotes.vercel.app/yotsugi-ononoki.jpg"
     },
     {
         "id": "ff0aa1a6-91e1-44fc-9bcb-d462020220d0",
         "name": "Nadeko Sengoku",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Nadeko%20Sengoku.jpg?t=2022-09-29T02%3A27%3A25.858Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Nadeko%20Sengoku.jpg?t=2022-09-29T02%3A27%3A25.858Z",
+        "image": "https://monogatari-quotes.vercel.app/nadeko-sengoku.jpg"
     },
     {
         "id": "5b4de626-c27a-493f-b402-21b5703861ce",
         "name": "Karen Araragi",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Karen%20Araragi.jpg?t=2022-09-29T02%3A28%3A23.743Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Karen%20Araragi.jpg?t=2022-09-29T02%3A28%3A23.743Z",
+        "image": "https://monogatari-quotes.vercel.app/karen-araragi.jpg"
     },
     {
         "id": "98e2b597-f01e-41fc-b748-f8204fa7f74e",
         "name": "Tsukihi Araragi",
-        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Tsukihi%20Araragi.jpg?t=2022-09-29T02%3A29%3A28.229Z"
+        "avatar": "https://hrbanmlztyltfitohkeo.supabase.co/storage/v1/object/public/monogatari/Tsukihi%20Araragi.jpg?t=2022-09-29T02%3A29%3A28.229Z",
+        "image": "https://monogatari-quotes.vercel.app/tsukihi-araragi.jpg"
     }
 ]
