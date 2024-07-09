@@ -1,4 +1,3 @@
-import { supabase } from "../database";
 import characters from "../../db/characters.json";
 import { Character } from "./types";
 
@@ -6,11 +5,7 @@ export const getCachedCharacters = async (): Promise<{
   results?: Character[];
   error?: unknown;
 }> => {
-  const { data: characters, error } = await supabase
-    .from("characters")
-    .select("*");
-
-  return { results: characters, error };
+  return { results: characters };
 };
 
 export const getCharacterById = (id: string) => {

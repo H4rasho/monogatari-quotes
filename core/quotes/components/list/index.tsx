@@ -31,7 +31,7 @@ export default function QuotesList({ quotes }: QuoteListProps) {
           <HStack mt={3} gap={5}>
             <Box minW={[100, 150]}>
               <Image
-                src={quote.character.avatar}
+                src={quote.character.image}
                 width={150}
                 height={150}
                 rounded="full"

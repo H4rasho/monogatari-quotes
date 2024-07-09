@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["cdn.myanimelist.net", "hrbanmlztyltfitohkeo.supabase.co"],
+    domains: [
+      "cdn.myanimelist.net",
+      "hrbanmlztyltfitohkeo.supabase.co",
+      "monogatari-quotes.vercel.app",
+    ],
   },
 };
 
